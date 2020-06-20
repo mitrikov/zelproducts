@@ -30,9 +30,24 @@ function crb_load() {
 }
 
 //  
+//  Подключение файлов Carbon Fields
+// 
+
+add_action( 'carbon_fields_register_fields', 'estore_register_custom_fields' );
+function estore_register_custom_fields() {
+	require get_template_directory() . '/includes/custom-fields-options/metabox.php';
+	require get_template_directory() . '/includes/custom-fields-options/theme-options.php';
+}
+
+//  
 //  Подключение настроек темы Zelproducts
 //  
 require get_template_directory() . '/includes/theme-settings.php';
+
+//  
+//  Подключение меню Zelproducts
+//  
+require get_template_directory() . '/includes/navigations.php';
 
 //  
 //  Подключение настроек областей виджетов Zelproducts
@@ -72,11 +87,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/includes/jetpack.php';
 }
 
+/*
+ * Вспомогательные функции
+ */
+require get_template_directory() . '/includes/helpers.php';
+
 /**
  * Load WooCommerce compatibility file.
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/includes/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-cart.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
 }

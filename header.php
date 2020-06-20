@@ -22,13 +22,55 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'zelproducts' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+<header class="header_content">
+	<div class="header">
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'zelproducts' ); ?></a>
+		
+		<nav class="header_menuLeft">
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zelproducts' ); ?></button> -->
 			<?php
+				zelproducts_primary_menu();
+			?>
+		</nav>
+
+		<div class="header_searchFormContainer">
+			<div class="header_searchForm">
+				<form method="get" action="<?php echo home_url( '/' ) ?>">
+					<input class="header_searchText" name="s" placeholder="Поиск продуктов">
+					<input type="submit" class="header_searchButton" title="Поиск">
+				</form>
+			</div>
+		</div>
+
+		<div class="header_menuRight">
+			<ul>
+				<li><div class="user_icon"></div><a href="<?php echo site_url('/wp-login.php?action=register'); ?>">Войти</a></li>
+				<li><?php zelproducts_woocommerce_cart_link(); ?></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+	<div class="promo_content">
+		<div class="promo_container">
+			<?php the_custom_logo(); ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<div class="promo_title">
+						<h1 class="promo_titleText">Магазин <span>для всей семьи</span></h1>
+						<h2 class="promo_adress">г. Зеленоград, к. 316</h2>
+					</div>
+				</a>
+			<div class="promo_backgroundImageRight"></div>
+			<div class="promo_backgroundTexture"></div>
+		</div>
+	</div>
+	
+	<nav class="categories_content">
+	<?php zelproducts_categories_menu(); ?>
+	</nav>
+			<!-- <?php
 			the_custom_logo();
+
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -43,17 +85,4 @@
 				?>
 				<p class="site-description"><?php echo $zelproducts_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zelproducts' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</div> -->

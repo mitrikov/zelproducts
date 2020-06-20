@@ -13,12 +13,24 @@ if( ! defined('ABSPATH')) {
 function zelproducts_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'zelproducts' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'zelproducts' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'name'          => esc_html__( 'Подвал — информарция', 'zelproducts' ),
+			'id'            => 'footer_info',
+			'description'   => 'Перетащите сюда виджеты, чтобы добавить их в подвал.',
+			'before_widget' => '<section id="%1$s" class="footer_menuInfo %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
+			'before_title'  => '<h2 class="footer_menuHeader">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+		register_sidebar(
+		array(
+			'name'          => esc_html__( 'Подвал — время работы', 'zelproducts' ),
+			'id'            => 'footer_timetable',
+			'description'   => 'Перетащите сюда виджеты, чтобы добавить их в подвал.',
+			'before_widget' => '<section id="%1$s" class="footer_menuInfo %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="footer_menuHeader">',
 			'after_title'   => '</h2>',
 		)
 	);
