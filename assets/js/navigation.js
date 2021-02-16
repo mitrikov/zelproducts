@@ -39,6 +39,8 @@
 		}
 	};
 
+	
+
 	// Close small menu when user clicks outside
 	document.addEventListener( 'click', function( event ) {
 		var isClickInside = container.contains( event.target );

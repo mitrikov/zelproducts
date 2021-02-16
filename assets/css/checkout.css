@@ -1,0 +1,132 @@
+/* ------------- Форма доставки (checkout) ------------- */
+
+.entry-title {
+	font-size: 30px;
+    border-bottom: 1px solid orange;
+    padding: 0 0 5px 0;
+    margin-bottom: 10px;
+}
+
+.entry-title a {
+	color: #000;
+}
+
+.checkout h3 {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.woocommerce-billing-fields__field-wrapper {
+	/*background-color: #f0f0f0;*/
+	padding: 10px 30px;
+}
+
+.form-row {
+	padding: 1px 0;
+	font-size: 18px;
+	/*box-sizing: content-box;*/
+}
+
+.form-row label {
+	/*background-color: #ddd;*/
+	/* width: 300px; */
+	/* height:50px; */
+	display: block;
+	/* float: left; */
+	/*border-bottom: 1px solid #bbb;*/
+	padding: 10px 0 10px 0px;
+}
+
+.form-row-last {
+	float: none;
+}
+
+.woocommerce-input-wrapper {
+	/*background-color: #e0e0e0;*/
+	display: flex;
+	height: 50px;
+	width: 300px;
+	/*border-bottom: 1px solid #bbb;*/
+	/* display: flex; */
+	align-items: center;
+}
+
+.woocommerce-input-wrapper input {
+	padding: 11px 0px 5px 5px;
+	width: 240px;
+	font-size: 17px;
+	margin: auto auto;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+}
+
+.woocommerce-additional-fields {
+	height: 300px;
+	position: relative;
+	top:49px;
+}
+
+.woocommerce-input-wrapper strong {
+	padding-left: 30px;
+}
+
+#order_comments_field {
+	height: 200px;
+}
+
+#order_comments {
+	/* height:200px; */
+	width: 500px;
+	margin-left: 58px;
+	padding: 6px;
+}
+
+/* Таблица checkout */
+
+.woocommerce-checkout-review-order-table, .shop_table {
+	width: 100%;
+	margin-top: 0px;
+}
+
+.woocommerce-checkout-review-order-table thead, .shop_table thead {
+	/* font-weight: 700; */
+}
+
+.woocommerce-checkout-review-order-table thead th,   {
+	padding: 10px;
+	background-color: #f9f9f9;
+	border: 1px solid #fff;
+}
+
+.woocommerce-checkout-review-order-table tbody td {
+	padding: 10px;
+	background-color: #eee;
+}
+
+
+
+.woocommerce-checkout-review-order-table tfoot td {
+	padding: 10px;
+	background-color: #e0e0e0;
+}
+
+.woocommerce-checkout-review-order-table tfoot th {
+	padding: 10px;
+	background-color: #e0e0e0;
+	font-weight: 500;
+	text-align: right;
+}
+
+.checkout_coupon #coupon_code {
+	margin-left: 0;
+}
+
+
+
+
+
+
+.validate-required {
+	margin: 30px 0 !Important;
+}
+

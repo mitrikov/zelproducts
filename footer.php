@@ -11,6 +11,13 @@
 
 ?>
 
+<div class="cart_mobile">
+	<ul>
+		<li><div class="user_icon"></div><a href="<?php echo site_url('/wp-login.php?action=register'); ?>">Войти</a></li>
+		<li><?php zelproducts_woocommerce_cart_link(); ?></li>
+	</ul>
+</div>
+
 <footer class="footer_content">
 		<div class="footer_topLine">
 				<?php 
@@ -46,20 +53,14 @@
 
 			<nav class="footer_menuCategories">
 				<div class="footer_menuHeader">Категории товаров</div>
-				<ul>
-					<li><a href="">Бакалея</a></li>
-					<li><a href="">Мясо</a></li>
-					<li><a href="">Сыр, колбаса</a></li>
-					<li><a href="">Зоотовары</a></li>
-					<li><a href="">Рыба</a></li>
-					<li><a href="">Фрукты и овощи</a></li>
-				</ul>
+				<?php zelproducts_categories_footer_menu(); ?>
+				
 			</nav>
 
 			<nav class="footer_menuInfo">
 				<div class="footer_menuHeader">Профиль</div>
 				<ul>
-					<li><a href="">Вход</a></li>
+					<li><a href="<?php echo site_url('/wp-login.php?action=register'); ?>">Вход</a></li>
 					<li><a href="">Данные </a></li>
 				</ul>
 			</nav>
@@ -75,7 +76,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'zelproducts' ), 'zelproducts', '<a href="http://underscores.me/">Евгений Митриков</a>' );
+				printf( esc_html__( 'Theme: %1$s %2$s.', 'zelproducts' ), 'Family Products', '<a href="http://underscores.me/"></a>' );
 				?>	
 			</div>	
 	</footer>

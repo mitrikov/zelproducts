@@ -1,0 +1,73 @@
+@media (max-width: 920px)  {
+	.woocommerce-cart-form__contents > thead > tr > th {
+		font-size: 12px;
+		font-weight: 500;
+		padding: 10px 0;
+	}
+
+	.woocommerce-cart-form__contents > tbody > tr > td {
+		font-size: 12px;
+		padding: 20px 0;
+	}
+
+	.remove {
+		font-size: 20px;
+	}
+
+	.product-price {
+		display: none;
+	}
+
+	.woocommerce-cart-form__contents > tbody .minus, .woocommerce-cart-form__contents > tbody .plus {
+		font-size: 19px;
+		border-radius: 13px;
+		width: 24px;
+		height: 24px;
+		position: relative;
+		top: 5px;
+	}
+
+	.minus {
+		margin-right: 6px;
+	}
+
+	.plus {
+		margin-left: 6px;
+	}
+
+	.woocommerce-cart-form__contents .qty {
+		width: 15px;
+		font-size: 14px;
+	}
+
+	.woocommerce-cart-form__contents .product-quantity {
+		min-width: 79px;
+	}
+
+	.product-thumbnail img { /* Иконка товара */
+		max-height: 57px;
+	}
+
+	#coupon_code {
+		font-size: 14px;
+	}
+
+	.coupon {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.coupon > label {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.coupon > .button {
+		margin: 10px;
+		font-size: 14px;
+	}
+
+	.cart_totals {
+		font-size: 14px;
+	}
+}

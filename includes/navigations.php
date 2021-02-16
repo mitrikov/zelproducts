@@ -9,6 +9,9 @@
 			'primary' => 'Основное',
 			'secondary' => 'Вторичное',
 			'categories' => 'Меню категорий',
+			'categories_footer' => 'Меню категорий подвал',
+			'categories_mobile' => 'Мобильное меню категорий',
+			'promo' => 'Промо-меню (Акции, новинки и т. д)'
 		)
 	);
 
@@ -31,5 +34,30 @@
 		);
 	}
 
+	function zelproducts_promo_menu() {
+		wp_nav_menu(
+			array(
+				'theme_location' => 'promo',
+				// 'menu_id'        => 'promo-menu',
+				'menu_class'	 => 'promo-menu',
+			)
+		);
+	}
+
+	function zelproducts_categories_footer_menu() {
+		wp_nav_menu(
+			array(
+				'theme_location' => 'categories_footer',
+			)
+		);
+	}
+
+	function zelproducts_categories_mobile_menu() {
+		wp_nav_menu(
+			array(
+				'theme_location' => 'categories_mobile',
+			)
+		);
+	}
 
 ?>

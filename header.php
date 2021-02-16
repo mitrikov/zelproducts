@@ -22,9 +22,14 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+	<input id="menu__toggle" type="checkbox" />
+  		<label class="menu__btn" for="menu__toggle">
+    			<span></span>
+  		</label>
 <header class="header_content">
+
 	<div class="header">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'zelproducts' ); ?></a>
+
 		
 		<nav class="header_menuLeft">
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zelproducts' ); ?></button> -->
@@ -37,18 +42,26 @@
 			<div class="header_searchForm">
 				<form method="get" action="<?php echo home_url( '/' ) ?>">
 					<input class="header_searchText" name="s" placeholder="Поиск продуктов">
-					<input type="submit" class="header_searchButton" title="Поиск">
+					<input type="submit" class="header_searchButton" value="Поиск">
 				</form>
+				<div class="header_searchForm_results"></div>
 			</div>
 		</div>
 
 		<div class="header_menuRight">
 			<ul>
-				<li><div class="user_icon"></div><a href="<?php echo site_url('/wp-login.php?action=register'); ?>">Войти</a></li>
+				<li><div class="user_icon"></div><a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" alt="<?php esc_attr_e( 'Войти', 'textdomain' ); ?>">Войти</a></li>
 				<li><?php zelproducts_woocommerce_cart_link(); ?></li>
 			</ul>
 		</div>
+
+		
 	</div>
+	<div class="header_categories_mobile">
+			<?php
+				zelproducts_categories_mobile_menu();
+			?>
+		</div>
 </header>
 
 	<div class="promo_content">
@@ -56,17 +69,23 @@
 			<?php the_custom_logo(); ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<div class="promo_title">
-						<h1 class="promo_titleText">Магазин <span>для всей семьи</span></h1>
-						<h2 class="promo_adress">г. Зеленоград, к. 316</h2>
+						<!-- <h1 class="promo_titleText">Магазин <span>для всей семьи</span></h1>
+						<h2 class="promo_adress">г. Зеленоград, к. 316</h2> -->
 					</div>
 				</a>
+			<div class="promo_backgroundImageLeft"></div>
 			<div class="promo_backgroundImageRight"></div>
 			<div class="promo_backgroundTexture"></div>
 		</div>
 	</div>
 	
-	<nav class="categories_content">
-	<?php zelproducts_categories_menu(); ?>
+	<nav class="categories-container">
+		<div class="categories-content">
+		<?php 
+			zelproducts_promo_menu();
+			zelproducts_categories_menu(); 
+		?>
+	</div>
 	</nav>
 			<!-- <?php
 			the_custom_logo();

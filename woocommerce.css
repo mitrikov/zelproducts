@@ -7,6 +7,8 @@ WooCommerce styles override
 /**
  * Shop tables
  */
+
+ /*
 table.shop_table_responsive thead {
 	display: none;
 }
@@ -22,7 +24,7 @@ table.shop_table_responsive tr td {
 }
 
 table.shop_table_responsive tr td::before {
-	content: attr(data-title) ": ";
+	 content: attr(data-title) ": "; 
 	float: left;
 }
 
@@ -56,7 +58,7 @@ table.shop_table_responsive tr td.download-actions .button {
 
 	table.shop_table_responsive tr th,
 	table.shop_table_responsive tr td {
-		text-align: left;
+		 text-align: left; 
 	}
 
 	table.shop_table_responsive tr td {
@@ -66,14 +68,14 @@ table.shop_table_responsive tr td.download-actions .button {
 	table.shop_table_responsive tr td::before {
 		display: none;
 	}
-}
+}*/
 
 /**
  * Products
  */
 ul.products {
 	margin: 0;
-	padding: 0;
+	/* padding: 0; */
 }
 
 ul.products li.product {
@@ -83,11 +85,16 @@ ul.products li.product {
 }
 
 ul.products li.product .woocommerce-loop-product__title {
-	font-size: 1rem;
+	margin: 30px 0 0 9px;
+	font-size: 1.2rem;
 }
 
-ul.products li.product img {
-	display: block;
+ul.products li.type-product img {
+	/* display: block; */
+	align-self: center;
+	/* image-rendering: pixelated; */
+	height: 150px;
+	max-width: 280px;
 }
 
 ul.products li.product .button {
@@ -97,17 +104,17 @@ ul.products li.product .button {
 @media screen and (min-width: 48em) {
 
 	ul.products li.product {
-		width: 30.79667%;
-		float: left;
-		margin-right: 3.8%;
+		/* width: 30.79667%; */
+		/* float: left; */
+		/* margin-right: 3.8%; */
 	}
 
 	ul.products li.product.first {
-		clear: both;
+		/* clear: both; */
 	}
 
 	ul.products li.product.last {
-		margin-right: 0;
+		/*margin-right: 0;*/
 	}
 
 	ul.products.columns-1 li.product {
@@ -120,11 +127,11 @@ ul.products li.product .button {
 	}
 
 	ul.products.columns-3 li.product {
-		width: 30.79667%;
+		/* width: 30.79667%; */
 	}
 
 	ul.products.columns-4 li.product {
-		width: 22.15%;
+		/* width: 22.15%; */
 	}
 
 	ul.products.columns-5 li.product {
@@ -254,13 +261,13 @@ ul.products li.product .button {
 	}
 
 	.col2-set .form-row-last {
-		float: right;
+		/* float: right; */
 		margin-right: 0;
 	}
 
 	.col2-set .form-row-first,
 	.col2-set .form-row-last {
-		width: 48.1%;
+		/* width: 48.1%; */
 	}
 }
 
@@ -390,20 +397,20 @@ p.stars.selected a:not(.active)::before {
  * Tabs
  */
 .woocommerce-tabs ul.tabs {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
+	/* list-style: none; */
+	/* margin: 0; */
+	/* padding: 0; */
+	/* text-align: left; */
 }
 
 .woocommerce-tabs ul.tabs li {
 	display: block;
-	margin: 0;
+	/* margin: 7px; */
 	position: relative;
 }
 
 .woocommerce-tabs ul.tabs li a {
-	padding: 1em 0;
+	padding: 0.4em 0;
 	display: block;
 }
 
@@ -449,6 +456,13 @@ p.stars.selected a:not(.active)::before {
 	color: #f00;
 }
 
+.woocommerce-Input {
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #e0e0e0;
+	font-size: 14px;
+}
+
 /**
  * Notices
  */
@@ -464,7 +478,13 @@ p.no-comments {
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: #3d9cd2;
+	background-color: #ffffff;
+	border: #ddd solid 1px;
+	border-radius: 5px;
+	/* padding: 30px 15px 20px 15px; */
+	box-shadow: #eee 0px 0px 18px;
+	margin: 0 0px 30px 0;
+	color: #000;
 }
 
 .woocommerce-error {
@@ -569,4 +589,96 @@ p.no-comments {
 
 .widget_price_filter .ui-slider-horizontal .ui-slider-range {
 	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.woocommerce-breadcrumb {
+	font-size: 13px;
+	color: #333;
+}
+
+.woocommerce-breadcrumb a {
+	color: #333;
+}
+
+.woocommerce-breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.woocommerce-products-header { /* Название раздела, страницы */
+	padding:10px 0;
+}
+
+.woocommerce-products-header__title { /* Название раздела, страницы */
+	font-size: 30px;
+	border-bottom: 1px solid orange;
+	padding: 0 0 5px 0;
+	margin-bottom: 10px;
+}
+
+
+
+button[name="update_cart"] {
+        display: none !important; 
+
+}
+
+.woocommerce form .form-row .optional{
+    display: none ;
+}
+
+.woocommerce-form-row span {
+	/* display: block; */
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.woocommerce-form-row > span > em {
+	display: block;
+	margin-top: 10px;
+}
+
+.woocommerce-result-count {  /*  Отображение 1–12 из 98  */
+	font-size: 12px;
+	float: left;
+	padding-right: 50px;
+	position: relative;
+	top: 14px;
+}
+
+.related {
+	display: block;
+}
+
+.orderby {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	color: #555;
+	padding: 10px;
+}
+.orderby option {
+	transition: 0.2s ease-in-out all;
+}
+
+.woocommerce-info > a {
+	display: inline-block;
+	color: #000000;
+	padding: 10px 10px;
+	background-color: var(--zelproducts-button-color);
+	border-radius: 5px;
+	margin: 10px 0 0 20px;
+	text-decoration: none;
+}
+
+.woocommerce-form-coupon-toggle {
+	margin-top: 10px;
 }

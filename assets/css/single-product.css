@@ -1,0 +1,121 @@
+.product_title {
+	font-size: 27px;
+	font-weight: bold;
+}
+
+/* ------------- Страница одиночного продукта ------------- */
+
+.summary h1 {
+	border-width: 0;
+}
+
+.woocommerce-product-gallery {
+	width: 300px;
+	margin-right: 30px;
+	height: 400px;
+	margin-top: px;
+}
+
+.flex-viewport {
+	height: 300px;
+}
+
+.flex-control-nav li>img {
+	height: 50px;
+	width: 50px;
+}
+
+.related {
+	margin-top: 92px;
+}
+
+.related > .products {
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+.summary .woocommerce-Price-amount {
+	font-weight: 300;
+	font-size: 32px;
+	margin-bottom: 20px;
+	display: inline-block;
+	float: left;
+	padding-right: 56px;
+	color: #ff6900;
+}
+
+.summary .product_title {
+	margin: 20px 0;
+}
+
+.summary .quantity {
+	text-align: left;
+	margin: 20px 0;
+
+}
+
+/*.summary .quantity .qty {
+	
+}*/
+
+
+
+.product_meta {
+	margin-top: 20px;
+}
+
+.product_meta > span {
+	display: block;
+}
+
+.wc-tabs-wrapper {
+	margin-top: 155px;
+	/* max-width: 900px; */
+	/* display: flex; */
+	flex-direction: column;
+	align-items: center;
+}
+
+.woocommerce-tabs ul.tabs {
+	display: flex;
+	min-width: 500px;
+}
+
+.woocommerce-tabs ul.tabs li {
+	margin: 10px 0;
+	background-color: #fff;
+}
+
+.woocommerce-tabs ul.tabs li {
+	margin: 0 9px;
+	padding: 10px 12px;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+}
+
+.description_tab a, .additional_information_tab a {
+	color: #000;
+}
+
+.active {
+	top: 1px;
+	font-weight: 600;
+}
+
+.woocommerce-Tabs-panel {
+	border: 1px solid #e0e0e0;
+	padding: 15px;
+	/* max-width: 900px; */
+	min-height: 150px;
+}
+
+.woocommerce-Tabs-panel h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.woocommerce-Tabs-panel p, .woocommerce-Tabs-panel table {
+	font-size: 15px;
+	font-weight: 300;
+}

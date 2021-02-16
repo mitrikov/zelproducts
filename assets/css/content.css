@@ -1,0 +1,49 @@
+.entry-content {
+	font-size: 21px;
+}
+
+.entry-content p {
+	margin: 10px 0;
+}
+
+.container_main {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1500px;
+}
+
+.main {
+	position: relative;
+	min-height: 500px;
+	background-color: rgba(255,255,255,0.85);
+	box-shadow: #ddd 0px 7px 22px;
+	z-index: 1;
+	padding: 50px 30px 30px 50px;
+}
+
+.main > h2, .entry-content > h2 {
+	font-size: 40px;
+}
+
+.page-title {
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.page-title span {
+	font-weight: 600;
+}
+
+.woocommerce-product-gallery__image {
+	height: 400px;
+	/* width: 300px; */
+	/* display: flex; */
+}
+
+.woocommerce-product-gallery__image  .wp-post-image {
+	height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    max-width: 0 auto;
+}

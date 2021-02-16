@@ -11,6 +11,11 @@
 	?>
  */
 
+if( ! defined('ABSPATH')) {
+	exit;
+}
+
+
 if ( ! function_exists( 'zelproducts_woocommerce_cart_link_fragment' ) ) {
 	/**
 	 * Cart Fragments.
@@ -29,6 +34,10 @@ if ( ! function_exists( 'zelproducts_woocommerce_cart_link_fragment' ) ) {
 	}
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'zelproducts_woocommerce_cart_link_fragment' );
+
+if( WP_DEBUG && WP_DEBUG_DISPLAY && (defined('DOING_AJAX') && DOING_AJAX) ){
+	@ ini_set( 'display_errors', 1 );
+}
 
 if ( ! function_exists( 'zelproducts_woocommerce_cart_link' ) ) {
 	/**
@@ -54,6 +63,9 @@ if ( ! function_exists( 'zelproducts_woocommerce_cart_link' ) ) {
 			?>
 		<?php
 	}
+	
+	add_action( 'wc_ajax_get_cart_link', 'zelproducts_woocommerce_cart_link' );
+
 }
 
 if ( ! function_exists( 'zelproducts_woocommerce_header_cart' ) ) {

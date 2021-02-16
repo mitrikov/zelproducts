@@ -1,0 +1,59 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1em;
+    /* vertical-align: baseline; */
+    font-family: 'Roboto', Calibri, Geneva, sans-serif;
+    font-weight: 300;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+a, abbr {
+	text-decoration: none;
+	color: #009cff;
+}
+
+body {
+	background: url('assets/images/background.png') repeat 0 0;
+	min-width: 320px;
+}
+
+ul>li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.wc-block-grid__products .wc-block-grid__product-image img {
+  width: initial;
+}
+
+.wc-block-grid.has-3-columns .wc-block-grid__product {
+
+}

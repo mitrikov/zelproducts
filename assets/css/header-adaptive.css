@@ -1,0 +1,97 @@
+@media (max-width: 920px) { /* Мобильные стили заголовка */
+	
+	.header_content {
+		width: 85%;
+		height: 100%;
+		box-shadow: #000b 1px 0px 5px;
+		left: -100%;
+		background-color: rgba(0,0,0,0.8);
+		position: fixed;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.header {
+		height: 150px;
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 24px 0 32px 13px;
+	}
+
+	.header_menuLeft ul {
+    	justify-content: space-between;
+    	width: 100%;
+  	}
+
+ 	.header_searchFormContainer {
+ 		width: calc(100% - 80px);
+ 		float: right;
+ 		order: 1;
+ 		margin-left: 80px;
+ 	}
+
+ 	.header_menuLeft {
+ 		order: 2;
+ 	}
+
+ 	 .header_menuRight {
+ 		order: 3;
+ 		padding-left: 6px;
+ 	}
+
+ 	.header_searchText {
+ 		min-width: 150px;
+ 		width: calc(100% - 30px);
+ 		box-sizing: border-box;
+ 	}
+
+ 	.header_searchButton {
+ 		/* left: -100px; */
+ 		position: absolute;
+ 		right: 100px;
+ 		left: 100%;
+ 		margin-left: -90px;
+ 	}
+
+	.promo_content {
+		padding: 99px 20px 85px;
+		overflow: hidden;
+	}
+
+	.promo_title {
+		display: inherit;
+	}
+
+	.promo_backgroundImageRight {
+  		transform: scale(1.2, 1.2);
+  	}
+
+  	.promo_title {
+		padding:0 10px;
+	}
+	.promo_titleText {
+		font-size: 61px;
+	}
+
+	.promo_titleText span {
+		font-size: 20px;
+	}
+
+	.promo_adress { 
+		font-size: 18px;
+	}
+
+
+}
+
+@media (max-width: 1140px) { /* Ссылка корзины */
+	.header_searchText {
+		min-width: 175px;
+	}
+
+	.header  a {
+		font-size: 14px;
+	}
+}
