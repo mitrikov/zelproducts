@@ -3,4 +3,17 @@
 		font-size: 20px;
 		margin-top: 14px;
 	}
+
+	.woocommerce-billing-fields__field-wrapper p:not(:first-child) {
+		width: 95%;
+		box-sizing: border-box;
+	}
+
+	.woocommerce-input-wrapper {
+		width: 171px;
+	}
+
+	#order_comments {
+		min-width: 280px;
+	}
 }

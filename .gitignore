@@ -12,3 +12,7 @@ node_modules/
 
 # Папка Carbon Fields
 vendor/
+.vscode
+
+# Вся шелуха
+*.psd

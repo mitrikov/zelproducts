@@ -56,7 +56,7 @@
 				<?php zelproducts_categories_footer_menu(); ?>
 				
 			</nav>
-
+			
 			<nav class="footer_menuInfo">
 				<div class="footer_menuHeader">Профиль</div>
 				<ul>

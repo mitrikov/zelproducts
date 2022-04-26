@@ -1,0 +1,81 @@
+.woocommerce-MyAccount-navigation {
+	margin-top: 27px;
+}
+
+.woocommerce-MyAccount-navigation > ul {
+	display: flex;
+}
+
+.woocommerce-MyAccount-navigation-link {
+	margin: 0 9px;
+	padding: 10px 12px;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background-color: #efefef;
+	position: relative;
+	top: 1px;
+}
+
+.woocommerce-MyAccount-navigation-link.is-active {
+	background-color: #fff;
+}
+
+.woocommerce-MyAccount-navigation-link > a {
+	color: #000;
+}
+
+.woocommerce-MyAccount-content {
+	border: 1px solid #e0e0e0;
+	padding: 20px;
+	font-weight: 300;
+	min-height: 350px;
+}
+
+.woocommerce-MyAccount-navigation-link--downloads {
+	display: none;
+}
+
+.woocommerce-Address {
+	margin-top: 20px;
+}
+
+.woocommerce-Address > address {
+	margin-top: 5px;
+	font-size: 10px;
+}
+
+.woocommerce-EditAccountForm {
+	padding: 20px 100px;
+	/* display: flex; */
+	flex-flow: wrap;
+}
+
+.woocommerce-EditAccountForm p {
+	flex: 1 1 400px;
+}
+
+.woocommerce-EditAccountForm button, .woocommerce-MyAccount-content button {
+	background-color: var(--zelproducts-button-color);
+	padding: 15px 30px 12px 30px;
+	color: #000000;
+	border-radius: 7px;
+	margin: 9px 9px 0 0;
+	border-width: 0;
+	text-align: center;
+	font-size: 16px;
+}
+
+@media (max-width: 920px)  {
+	.woocommerce-MyAccount-navigation > ul {
+		flex-direction: column;
+	}
+
+	.woocommerce-MyAccount-navigation-link {
+		margin: 0;
+	}
+
+	.woocommerce-EditAccountForm {
+		padding: 0;
+	}
+}

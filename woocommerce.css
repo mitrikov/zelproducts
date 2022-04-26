@@ -99,6 +99,7 @@ ul.products li.type-product img {
 
 ul.products li.product .button {
 	display: block;
+	white-space: nowrap;
 }
 
 @media screen and (min-width: 48em) {

@@ -80,10 +80,22 @@
 	</div>
 	
 	<nav class="categories-container">
+		<div class="side-menu">
+			<button class="menu-button">
+				<span class="icon-hamburger">
+					<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 1H1M13.5 5.875H1M13.5 10.75H1" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+				</span>
+				<span class="menu-button-text">Каталог товаров</span>
+			</button>
+			
+			<?php zelproducts_categories_menu(); ?>
+			
+		</div>
+		
 		<div class="categories-content">
 		<?php 
 			zelproducts_promo_menu();
-			zelproducts_categories_menu(); 
+			
 		?>
 	</div>
 	</nav>

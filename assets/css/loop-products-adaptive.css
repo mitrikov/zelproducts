@@ -7,11 +7,12 @@
 	.products li {
 		width: 100%;
 		margin: 10px 0 20px 0 !Important;
+		box-sizing: border-box;
 	}
 
 	.add_to_cart_button {
-		padding: 15px 50px !Important;
-		font-size: 17px;
+		padding: 9px 31px !Important;
+		font-size: 14px;
 	}
 
 	.page-numbers {
@@ -21,6 +22,15 @@
 	
 	.main {
 		padding: 20px 5px !Important;
+	}
+
+	.loop_bottom_part_content > .price {
+		display: block;
+		float: left;
+	}
+
+	.loop_bottom_part_content > .quantity {
+		min-width: 96px;
 	}
 }
 

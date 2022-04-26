@@ -17,6 +17,7 @@ function zelproducts_scripts() {
 	wp_enqueue_style( 'zelproducts-header-adaptive', get_template_directory_uri() . '/assets/css/header-adaptive.css');
 	wp_enqueue_style( 'zelproducts-burger-menu', get_template_directory_uri() . '/assets/css/burger-menu.css'); 
 	wp_enqueue_style( 'zelproducts-categories', get_template_directory_uri() . '/assets/css/categories.css');
+	wp_enqueue_style( 'zelproducts-categories-adaptive', get_template_directory_uri() . '/assets/css/categories-adaptive.css');
 	wp_enqueue_style( 'zelproducts-footer', get_template_directory_uri() . '/assets/css/footer.css');
 	wp_enqueue_style( 'zelproducts-loop-products', get_template_directory_uri() . '/assets/css/loop-products.css');
 	wp_enqueue_style( 'zelproducts-loop-products-adaptive', get_template_directory_uri() . '/assets/css/loop-products-adaptive.css');
@@ -45,7 +46,7 @@ function zelproducts_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	if( is_page('checkout') ) {
+	if( is_page('checkout') || is_page('dostavka') ) {
 		wp_enqueue_script('zelproducts-yandex-api', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=589950b5-8240-429e-9ecf-14bce81560f9');
 		wp_enqueue_script( 'zelproducts-map', get_template_directory_uri() . '/assets/js/map.js');
 	}

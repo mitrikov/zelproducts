@@ -1,11 +1,11 @@
 .footer_content {
-	z-index: -200;
+	/* z-index: -200; */
 	background-color:#f0f0f0;
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 900;
+	/* z-index: 833; */
 	transition: left 0.2s ease-in-out;
 	will-change: transform;
 }
@@ -22,7 +22,7 @@
 
 .footer_topLine {
 	max-width: 1500px;
-	/*min-height: 200px;*/
+	min-height: 286px;
 	margin: 0 auto;
 	padding: 0 60px;
 	display: flex;
@@ -47,7 +47,7 @@
 
 .footer_menuHeader {
 	font-size: 20px;
-	padding-bottom: 3px;
+	padding-bottom: 7px;
 }
 
 .footer_menuHeader::after {
@@ -80,10 +80,14 @@
 	background-color: #fff;
 	z-index: 1200;
 	width: 100%;
-	text-align: center;
+	/* text-align: center; */
 	box-shadow: var(--zelproducts-fixed-el-shadow);
 	bottom: -70px;
 	transition: 0.7s bottom ease-in;
+}
+
+.footer_content .menu-kategorii-container {
+	display: block;
 }
 
 @media (max-width: 920px) {
@@ -117,6 +121,7 @@
 		color: #fff;
 		border-radius: 7px;
 		margin: 9px 9px 0 0;
+		/* box-sizing: content-box; */
 	}
 
 	.cart_mobile > ul > li:nth-child(2) > a  {
@@ -136,7 +141,9 @@
 	}
 
 	.cart_mobile > ul > li:nth-child(1) > a {
-		/*padding-top: 6px;*/
-		/* color: red; */
+		
+/*padding-top: 6px;*/
+		
+/* color: red; */
 	}
 }
