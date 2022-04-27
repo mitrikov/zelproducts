@@ -6,7 +6,7 @@
  *
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
-
+import { Swal } from "sweetalert";
 
 
 ( function( $ ) {
