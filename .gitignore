@@ -17,3 +17,4 @@ vendor/
 # Вся шелуха
 *.psd
 assets/
+assets_test
